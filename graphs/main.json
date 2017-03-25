@@ -10,58 +10,7 @@
     },
     "inports": {},
     "outports": {},
-    "groups": [
-        {
-            "name": "lol",
-            "nodes": [
-                "/Log_n4dfp",
-                "core/Output_vsac3"
-            ],
-            "metadata": {
-                "description": ""
-            }
-        }
-    ],
-    "processes": {
-        "/Log_n4dfp": {
-            "component": "/Log",
-            "metadata": {
-                "label": "Log",
-                "x": 324,
-                "y": 36,
-                "width": 72,
-                "height": 72
-            }
-        },
-        "core/Output_vsac3": {
-            "component": "core/Output",
-            "metadata": {
-                "label": "Output",
-                "x": 468,
-                "y": 108,
-                "width": 72,
-                "height": 72
-            }
-        }
-    },
-    "connections": [
-        {
-            "src": {
-                "process": "/Log_n4dfp",
-                "port": "out"
-            },
-            "tgt": {
-                "process": "core/Output_vsac3",
-                "port": "in"
-            },
-            "metadata": {}
-        },
-        {
-            "data": "Test",
-            "tgt": {
-                "process": "/Log_n4dfp",
-                "port": "in"
-            }
-        }
-    ]
+    "groups": [],
+    "processes": {},
+    "connections": []
 }
