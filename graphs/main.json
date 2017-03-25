@@ -1,1 +1,16 @@
-
+{
+    "caseSensitive": false,
+    "properties": {
+        "name": "main",
+        "environment": {
+            "type": "noflo-browser",
+            "content": "<button id='button'>Go!</button>\n<p id='message'></p>"
+        },
+        "icon": ""
+    },
+    "inports": {},
+    "outports": {},
+    "groups": [],
+    "processes": {},
+    "connections": []
+}
