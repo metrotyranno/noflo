@@ -1,7 +1,5 @@
 // Load the NoFlo interface
 var noflo = require('noflo');
-// Also load any other dependencies you have
-var fs = require('fs');
 
 // Implement the getComponent function that NoFlo's component loader
 // uses to instantiate components to the program

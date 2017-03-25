@@ -10,14 +10,25 @@
     },
     "inports": {},
     "outports": {},
-    "groups": [],
+    "groups": [
+        {
+            "name": "lol",
+            "nodes": [
+                "/Log_n4dfp",
+                "core/Output_vsac3"
+            ],
+            "metadata": {
+                "description": ""
+            }
+        }
+    ],
     "processes": {
         "/Log_n4dfp": {
             "component": "/Log",
             "metadata": {
                 "label": "Log",
-                "x": 334,
-                "y": 100,
+                "x": 324,
+                "y": 36,
                 "width": 72,
                 "height": 72
             }
@@ -44,6 +55,13 @@
                 "port": "in"
             },
             "metadata": {}
+        },
+        {
+            "data": "Test",
+            "tgt": {
+                "process": "/Log_n4dfp",
+                "port": "in"
+            }
         }
     ]
 }
