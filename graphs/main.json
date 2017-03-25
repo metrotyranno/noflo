@@ -3,7 +3,7 @@
     "properties": {
         "name": "main",
         "environment": {
-            "type": "noflo-browser",
+            "type": "noflo-nodejs",
             "content": "<button id='button'>Go!</button>\n<p id='message'></p>"
         },
         "icon": ""
@@ -11,6 +11,39 @@
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "/Log_n4dfp": {
+            "component": "/Log",
+            "metadata": {
+                "label": "Log",
+                "x": 334,
+                "y": 100,
+                "width": 72,
+                "height": 72
+            }
+        },
+        "core/Output_vsac3": {
+            "component": "core/Output",
+            "metadata": {
+                "label": "Output",
+                "x": 468,
+                "y": 108,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "/Log_n4dfp",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "core/Output_vsac3",
+                "port": "in"
+            },
+            "metadata": {}
+        }
+    ]
 }
